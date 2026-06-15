@@ -16,7 +16,7 @@ export default function Header({ onReset, showReset, onOpenHistory }: HeaderProp
           </div>
           <div className="cursor-pointer" onClick={onReset}>
             <h1 className="text-base sm:text-lg font-semibold tracking-tight text-zinc-900 flex items-center gap-1.5 font-sans">
-              Syllabus Master <span className="text-[10px] sm:text-xs bg-rose-50 text-rose-600 border border-rose-100 px-2 py-0.5 rounded-full font-medium tracking-normal">Academic 5.0</span>
+              Notestube <span className="text-[10px] sm:text-xs bg-rose-50 text-rose-600 border border-rose-100 px-2 py-0.5 rounded-full font-medium tracking-normal">Academic 5.0</span>
             </h1>
             <p className="text-[10px] text-zinc-500 font-mono text-left">Professional Lecture Analysis</p>
           </div>

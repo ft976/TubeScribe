@@ -876,7 +876,7 @@ app.post("/api/generate-notes", async (req, res) => {
       );
 
       // --- STAGE 3: MASTER TOUCHUP (Gemini Final Pass) ---
-      res.write(`data: ${JSON.stringify({ type: 'status', text: 'Syllabus Master: Final Academic Validation...' })}\n\n`);
+      res.write(`data: ${JSON.stringify({ type: 'status', text: 'Notestube: Final Academic Validation...' })}\n\n`);
       const finalPassStream = generateAIStream(
         `MASTER TOUCHUP ON ACADEMIC MATERIAL:\n\n${cleanedNotes}`,
         `You are the Master Education Director. 
@@ -885,7 +885,7 @@ app.post("/api/generate-notes", async (req, res) => {
          2. Verify that NO data from the lecture is omitted.
          3. Guarantee perfect document flow for a "Master Class" academic guide.
          4. NO unrequested text. NO structural flaws.
-         5. End with a professional "SYLLABUS MASTER CERTIFIED" footer.`
+         5. End with a professional "NOTESTUBE CERTIFIED" footer.`
       );
 
       for await (const chunk of finalPassStream) {
@@ -997,7 +997,7 @@ ${qwenAnalysis}
          4. VISUALS: Perfect, professional Markdown structure. Use ### for Topics and #### for Sub-categories.
          5. CLEANING: Purge all unwanted characters or conversational filler.
          6. TONE: High-level academic, encouraging, and strictly pedagogical.
-         7. Include a "Syllabus Master Answer Key" at the very end.`;
+         7. Include a "Notestube Answer Key" at the very end.`;
 
     if (stream) {
       res.setHeader('Content-Type', 'text/event-stream');

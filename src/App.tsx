@@ -1033,7 +1033,7 @@ export default function App() {
       <footer className="bg-zinc-50 border-t border-zinc-100 py-8 select-none">
         <div className="max-w-7xl mx-auto px-4 text-center">
           <p className="text-xs text-zinc-400 font-mono">
-            &copy; 2026 Syllabus Master: Academic Lecture Analyst. All rights reserved.
+            &copy; 2026 Notestube. All rights reserved.
           </p>
         </div>
       </footer>
